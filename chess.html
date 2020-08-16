@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <title>Chess Board</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    <style>
+        html,body{
+            margin: 0;
+        }
+
+        .red-square {
+            width: 80vh;
+            position: relative;
+            left: 50vh;
+            border: 10px solid rgb(22, 18, 10);
+        }
+
+        .main{
+            height:10vh;
+            display: flex;            
+        }
+
+        .black{
+            flex: 1; 
+            display: flex; 
+            justify-content: center; 
+            background-color: #793e12; 
+            font-size: 0px;
+        }
+
+        .white{
+            flex: 1;
+            display: flex; 
+            justify-content: center;  
+            background-color: #d09a52; 
+            font-size: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="red-square">
+        <div class=main>
+         
+            <div class=black>
+                <i class='fas fa-chess-rook' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-knight' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-bishop' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-king' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-queen' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-bishop' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-knight' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-rook' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center; '></i>
+            </div>
+            
+        </div>
+    
+        <div class=main>
+     
+            <div class=white>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>    
+            <div class=black>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color:black;justify-content: center;align-items: center;'></i>
+            </div>
+            
+        </div>
+
+        <div class=main>
+         
+            <div class=black></div>
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>
+            
+        </div>
+
+        <div class=main>
+     
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>    
+            <div class=black></div>
+            
+        </div>
+
+        <div class=main>
+         
+            <div class=black></div>
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>
+            
+        </div>
+
+        <div class=main>
+     
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>
+            <div class=black></div>
+            <div class=white></div>    
+            <div class=black></div>
+            
+        </div>
+
+        <div class=main>
+         
+            <div class=black>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-pawn' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            
+        </div>
+
+        <div class=main>
+     
+            <div class=white>
+                <i class='fas fa-chess-rook' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-knight' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-bishop' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-king' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-queen' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=black>
+                <i class='fas fa-chess-bishop' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>
+            <div class=white>
+                <i class='fas fa-chess-knight' style='display:flex;font-size:48px;color: white;justify-content: center;align-items: center; '></i>
+            </div>    
+            <div class=black>
+                <i class='fas fa-chess-rook' style='display:flex;font-size:48px;color:white;justify-content: center;align-items: center; '></i>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

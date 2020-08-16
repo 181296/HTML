@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Login Page</title>
+    <style>
+
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            display: flex;
+            height: 100vh;
+            background-color: blanchedalmond;
+            justify-content: center;
+            align-items: center;
+            background-image: url(image4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .sub-main{
+            height: 80vh;
+            width: 50vh;
+            background-color: white;
+        }
+
+        .login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            background-color: white;
+            height: 25vh;
+        }
+
+        #username{
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            height: 10vh;
+            width: 47vh;
+            background-color: white;
+            font-size: 20px;
+            border-radius: 20px;
+            border-style: none;
+            border: none;
+            border-bottom: 2px solid black;
+
+        }
+
+        #password{
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            height: 10vh;
+            width: 47vh;
+            background-color: white;
+            font-size: 20px;
+            border-radius: 20px;
+            margin-top: 25px;
+            border-style: none;
+            border-bottom: 2px solid black;
+        }
+
+        #remember{
+            margin-top: 20px;
+            font-size: 20px;
+
+        }
+
+        #keep{
+            margin-top: 20px;
+            font-size: 20px;
+            margin-left: 100px;
+        }
+
+        .but{
+            margin-top: 40px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #login{
+            height: 8vh;
+            width: 50vh;
+            border-radius: 30px;
+            border-style: none;
+            background: linear-gradient(rgb(38, 17, 231),rgb(228, 4, 217));
+            text-align: center;
+            font-size: 25px;
+            
+        }
+
+        #signin{
+            height: 5vh;
+            width: 10vh;
+            border-radius: 30px;
+        }
+
+        .sign{
+            background-color: white;
+            height: 7vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+    <script>
+
+    </script>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="sub-main">
+            <div class="login">
+                LOGIN
+            </div>
+
+            <input
+                type="text"
+                name=""
+                id="username"
+                placeholder="Username"
+                required minlength="3" maxlength="12"
+            />
+
+
+            <input
+                type="text"
+                name=""
+                id="password"
+                placeholder="Password"            
+            />
+
+            <input type="checkbox" id="remember" name="">
+            <label for="remember"> Remember me</label>
+            
+            <input type="checkbox" id="keep" name="">
+            <label for="keep"> Keep me Sign In</label>
+
+            <div class="but">
+                <button id="login" onclick="login()">Login</button>
+            </div>
+                <br>
+            
+            <div class="sign">
+                <img src="insta.jpg" alt="instagram" style="height: 50px; width: 50px;">
+                <img src="gmail.jpg" alt="gmail" style="height: 30px; width: 30px;">
+                <img src="facebook.jpg" alt="facebook" style="height: 45px; width: 45px; padding-left: 5px;">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

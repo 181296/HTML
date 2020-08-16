@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cal.js"></script>    
+    <title>Calculator</title>
+    <style>
+        .class1{
+            background-color:black;
+            height: 60px;
+            width: 700px;
+            line-height: 60px;
+            padding-left: 10px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    
+        .class2 {
+                background-color: cadetblue;
+                width: 700px;
+                height: 100px;
+                padding-left: 10px;
+                line-height: 100px;
+        }
+
+        .class4{
+            background-color:#C2C3C5;
+            height: 350px;
+            width: 700px;
+            text-align: left;
+            padding-left: 10px;
+            padding-top: 10px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            
+        }
+
+        body{
+            margin: 10px;;
+        }
+        
+        .mode{
+            display: inline-block;
+            color: white;
+            background-color: transparent;
+            border: none;
+            font-size: 25px;
+        }
+        
+        .convert{
+            display: inline-block;
+            font-size: 15px;
+            width: 180px;
+            height: 40px;
+            border-radius: 10px;
+            text-align: center;
+        
+        }
+        
+        .smallbtn{
+            display: inline-block;
+            width: 65px;
+            height: 40px;
+            line-height: 30px;
+            font-size: 25px;
+            border-radius: 10px;
+            background-color: #EAEAEC;
+        }
+        
+        .mediumbtn{
+            display: inline-block;
+            width: 88px;
+            height: 40px;
+            line-height: 30px;
+            font-size: 25px;
+            border-radius: 10px;
+
+        }
+        
+        .bigbtn{display: inline-block;
+            width: 135px;
+            height: 40px;
+        
+            font-size: 20px;
+            border-radius: 10px;
+            padding-left:50px;
+            border-color: black;
+            border:solid;
+
+        }
+        
+        .row1{
+            font-size: 20px;
+        }
+        
+        .class3a{
+            background-color:rgb(184, 234, 238);
+                width: 700px;
+                height: 100px;
+                padding-left: 10px;
+                line-height: 100px;
+        }
+        
+        .powerbtn{
+            display: inline-block;
+            width: 65px;
+            height: 41px;
+            
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <div class="class1">
+        <select name="modes" id="mode" class=mode > 
+            <option value="">ADVANCE MODE</option>
+        </select>
+
+    </div>
+    <div class="class2">0</div>
+    <div class="class3"></div>
+    <div class="class3a">
+        this is screen
+    </div>
+    <div class="class4">
+        <div class=row1>
+            <select class="convert" style="color:black; background-color:white; border: none;" > 
+                <option value="" style="font-size: 20px;">Degrees</option>
+            </select>
+        
+            &nbsp;to
+            <select  class="convert" style="color: black; background-color: white; border: none;" > 
+                <option value=""style="font-size: 20px;">Radians</option>
+                
+            </select>
+            
+           
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            0degrees&nbsp;= &nbsp;0radians
+        </div>
+        <br>
+        <div>
+            <button onclick="click1('n')" class=smallbtn>&#8593;n</button>
+            <button onclick="click1('n')" class=smallbtn>&#8595;n</button>
+            <button onclick="click1('10')" class=powerbtn >10 <sup>y</sup> </button>
+            <button onclick="click1('mod')" class=smallbtn>mod</button>
+            <button onclick="click1('1')" class=smallbtn>&#8617;</button>
+            <button onclick="click1('1')" class=smallbtn>C</button>
+            <button onclick="click1('1')" class=mediumbtn>cos</button>
+            <button onclick="click1('1')" class=mediumbtn>sin</button>
+            <button onclick="click1('1')" class=mediumbtn>tan</button>
+            
+        </div>
+    <br>
+        <div>
+            <button onclick="click1('7')" class=smallbtn>7</button>
+            <button onclick="click1('8')" class=smallbtn>8</button>
+            <button onclick="click1('9')" class=smallbtn >9 </button>
+            <button onclick="click1('/')" class=smallbtn>/</button>
+            <button onclick="click1('(')" class=smallbtn>(</button>
+            <button onclick="click1(')')" class=smallbtn>)</button>
+            <button onclick="click1('1')" class=mediumbtn>cosh</button>
+            <button onclick="click1('1')" class=mediumbtn>sinh</button>
+            <button onclick="click1('1')" class=mediumbtn>tanh</button>
+            
+        </div>
+    <br>
+        <div>
+            <button onclick="click1('4')" class=smallbtn>4</button>
+            <button onclick="click1('5')" class=smallbtn>5</button>
+            <button onclick="click1('6')" class=smallbtn >6 </button>
+            <button onclick="click1('*')" class=smallbtn>*</button>
+            <select onclick="click1('1')"  class=bigbtn style="color:black; background-color:#EFEFEF; border: none;" > 
+                <option value="" style="font-size: 20px;">X</option>
+            </select>
+            
+            
+            <button onclick="click1('-1')" class=powerbtn>x <sup>-1</sup> </button>
+            <button onclick="click1('1')" class=smallbtn>x!</button>
+            <button onclick="click1('1')" class=smallbtn>|x|</button>
+            <button onclick="click1('1')" class=smallbtn>Arg</button>
+            
+        </div>
+    <br>
+        <div>
+            <button onclick="click1('1')" class=smallbtn>1</button>
+            <button onclick="click1('2')" class=smallbtn>2</button>
+            <button onclick="click1('3')" class=smallbtn >3 </button>
+            <button onclick="click1('-')" class=smallbtn>-</button>
+            <button onclick="click1('1')" class=smallbtn>&pi;</button>
+            <button onclick="click1('e')" class=smallbtn>e</button>
+            <button onclick="click1('1')" class=powerbtn>x <sup>y</sup></button>
+            <button onclick="click1('1')" class=smallbtn>&#8730;</button>
+            <button onclick="click1('1')" class=smallbtn>log</button>
+            <button onclick="click1('1')" class=smallbtn>ln</button>
+            
+        </div>
+    <br>
+        <div>
+            <button onclick="click1('0')" class=smallbtn>0</button>
+            <button onclick="click1('.')" class=smallbtn>.</button>
+            <button onclick="click1('1')" class=smallbtn >&iota; </button>
+            <button onclick="add('+')" class=smallbtn>+</button>
+            <button onclick="click1('=')" class=smallbtn>=</button>
+            <button onclick="click1('1')" class=smallbtn>axb</button>
+            <button onclick="click1('1')" class=smallbtn>Re</button>
+            <button onclick="click1('1')" class=smallbtn>lm</button>
+            <button onclick="click1('1')" class=smallbtn>conj</button>
+            <button onclick="click1('1')" class=smallbtn>f(x)</button>
+        </div>
+    </div>
+</center>
+</body>
+</html>

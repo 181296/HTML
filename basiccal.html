@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        html,
+        body {
+            margin: 0rem;
+        }
+
+        .main {
+            background-color: ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: ;
+            display: flex;
+            flex-direction: column;
+            height: 98vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.2rem;
+        }
+
+
+        .top {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            background-color: ;
+            width: 100%;
+        }
+
+
+
+        .class1 {
+            flex: 2;
+            background-color: salmon;
+            display: flex;
+            color: seashell;
+            font-size: 1.5rem;
+            font-weight: bold;
+
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+
+
+        }
+
+
+
+        .class2 {
+            background-color: whitesmoke;
+            flex: 5;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-size: 3rem;
+            border: solid 0.1rem black;
+
+
+        }
+
+
+        .button {
+            flex: 6;
+            background-color: whitesmoke;
+            padding: 1rem;
+            border: solid 0.1rem black;
+            margin-top: 0.5rem;
+        }
+
+
+
+
+
+        .button-block {
+            display: flex;
+
+            margin-top: 1rem;
+        }
+
+        .smallbtn {
+            width: 80px;
+            height: 80px;
+            line-height: 25px;
+            font-size: 40px;
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: #EAEAEC;
+            margin-left: 2rem;
+            box-shadow: 5px 5px gray;
+
+        }
+    </style>
+
+
+
+
+    <script src="basiccal.js"></script>
+</head>
+
+
+
+
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="top">
+                <div class="class1">
+                    <h2 class=mode>Calculator</h2>
+
+                </div>
+
+
+                <div class="class2">
+                    <div class="screen">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="button">
+                <div class="button-block">
+                    <div><button onclick="display('(')" class=smallbtn></button></div>
+                    <div><button onclick="clear_val()" class=smallbtn>CE</button></div>
+                    <div><button onclick="display('%')" class=smallbtn>%</button></div>
+                    <div><button onclick="reset()" class=smallbtn>AC</button></div>
+
+                </div>
+
+                <div class="button-block">
+
+                    <div><button onclick="display('7')" class=smallbtn>7</button></div>
+                    <div><button onclick="display('8')" class=smallbtn>8</button></div>
+                    <div><button onclick="display('9')" class=smallbtn>9 </button></div>
+                    <div><button onclick="display('/')" class=smallbtn>/</button></div>
+
+
+                </div>
+
+                <div class="button-block">
+
+                    <div><button onclick="display('4')" class=smallbtn>4</button></div>
+                    <div> <button onclick="display('5')" class=smallbtn>5</button></div>
+                    <div> <button onclick="display('6')" class=smallbtn>6 </button></div>
+                    <div> <button onclick="display('*')" class=smallbtn>*</button></div>
+
+                </div>
+
+
+                <div class="button-block">
+
+                    <div> <button onclick="display('1')" class=smallbtn>1</button></div>
+                    <div><button onclick="display('2')" class=smallbtn>2</button></div>
+                    <div><button onclick="display('3')" class=smallbtn>3 </button></div>
+                    <div><button onclick="display('-')" class=smallbtn>-</button></div>
+
+                </div>
+
+
+
+                <div class="button-block">
+
+                    <div> <button onclick="display('0')" class=smallbtn>0</button></div>
+                    <div> <button onclick="display('.')" class=smallbtn>.</button></div>
+                    <div> <button onclick="output()" class=smallbtn>=</button></div>
+                    <div> <button onclick="display('+')" class=smallbtn>+</button></div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        body{
+            margin: 0px;
+        }
+
+        .main{
+            display: flex;
+            flex-direction: column;
+            height: 55vh;
+            width: 23vw;
+            margin-top: 10vh; 
+            padding: 10px;
+            border: solid 2px black;
+            border-radius: 10px;
+        }
+
+        .A{
+            flex: 1.7;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .B{
+            flex: 2.5;
+            background-color: cadetblue;
+            border: solid 10px;
+        }
+
+        .C{
+            flex: 8.3;
+            background-color: #C2C3C5;
+            padding-top: 25px;
+        }
+
+        .smallbtn{
+            display: inline-block;
+            width: 65px;
+            height: 40px;
+            line-height: 30px;
+            font-size: 25px;
+            border-radius: 10px;
+            background-color: #EAEAEC;
+            margin: 5px;
+        }
+
+
+    </style>
+
+    <script>
+        let number = "";
+        function click1(no) {
+            let n = document.querySelector(".B");
+            
+            if(no == '=') {
+                
+                number = eval(number);
+                n.innerHTML = number;
+            }
+
+            else if(no == 'c') {
+
+                number = "";
+                n.innerHTML = number;
+            }
+
+            else if(no == 'off') {
+
+                number = "";
+                n.innerHTML = number;
+            }
+            
+            else {
+
+                number = number + no;
+                n.innerHTML = number;
+            }
+            
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+    <center>
+        <div class="main">
+
+            <div class="A">
+
+                <select name="modes" id="mode" class=mode > 
+                    <option value="">ADVANCE MODE</option>
+                </select>
+
+            </div>
+            
+            <div class="B">
+                Screen
+            </div>
+
+            <div class="C">
+
+                <div>
+                    <button onclick="click1('c')" class=smallbtn>C</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="click1('off')" class=smallbtn>OFF</button>
+                    <button onclick="click1('on')" class=smallbtn>ON</button>
+                </div>
+                
+                <div>
+                    <button onclick="click1('7')" class=smallbtn>7</button>
+                    <button onclick="click1('8')" class=smallbtn>8</button>
+                    <button onclick="click1('9')" class=smallbtn >9 </button>
+                    <button onclick="click1('/')" class=smallbtn>/</button>
+                </div>
+
+                <div>
+                    <button onclick="click1('4')" class=smallbtn>4</button>
+                    <button onclick="click1('5')" class=smallbtn>5</button>
+                    <button onclick="click1('6')" class=smallbtn >6</button>
+                    <button onclick="click1('*')" class=smallbtn>*</button>
+                </div>
+
+                <div>
+                    <button onclick="click1('1')" class=smallbtn>1</button>
+                    <button onclick="click1('2')" class=smallbtn>2</button>
+                    <button onclick="click1('3')" class=smallbtn >3</button>
+                    <button onclick="click1('-')" class=smallbtn>-</button>
+                </div>
+
+                <div>
+                    <button onclick="click1('0')" class=smallbtn>0</button>
+                    <button onclick="click1('.')" class=smallbtn>.</button>
+                    <button onclick="click1('=')" class=smallbtn >=</button>
+                    <button onclick="click1('+')" class=smallbtn>+</button>
+                </div>
+            </div>
+
+        </div>
+        
+    </center>
+
+</body>
+</html>

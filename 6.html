@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+       
+      .btn:hover{
+            background:black;
+            text-decoration: underline; 
+            margin-left:0;     
+        }
+        
+    </style>
+    <title>Document</title>
+    <script src="6.js"></script>
+</head>
+<body>
+<section class="container-fluid">
+    <div class="row  justify-content:center bg-danger" >
+        <div class="col-3 p-0">
+            <h4>Cdac Kharghar</h4>
+        </div>
+        <div class="col-4 p-0 ">
+        </div>
+        <div class="col-1 p-0 ">
+            <button class="btn btn-md btn-outline-danger btn-block" style="color:white">home</button>
+        </div>
+        <div class="col-1 p-0">
+            <button class="btn btn-md btn-outline-danger btn-block" style="color:white">
+                contact
+            </button>
+        </div>
+        <div class="col-1 p-0">
+            <button class="btn btn-md btn-outline-danger btn-block" style="color:white">aboutus</button>
+        </div>
+        <div class="col-1 p-0" >
+            <button class="btn btn-md btn-outline-danger btn-block" style="color:white"> login</button>
+        </div>
+        <div class="col-1 p-0">
+            <button class="btn btn-md btn-outline-danger btn-block" style="color:white">help</button>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-12  d-flex flex-column">
+          <!-- Content Row-->
+          <div class="row bg-secondary mt-1 mb-1" style="border-radius: 10px;">
+            <div
+              class="col-12 d-flex justify-content-center align-items-center"
+              style="height: 200px;">
+              <h1 style="color:white">Hello-CDACIANS!!</h1>
+            </div>
+          </div>
+          <div class="col-12 d-flex m-0">
+                <div class="col-3 p-0 ml-0" >
+                    <button id="like" class="btn btn-primary btn-block m-0" onclick="like(this)">Like 0</button>
+                </div>
+                <div class="col-6 p-0 " >
+                    <input id="inputtext" class="form-control" type="text " placeholder="Add review Here">
+                </div>
+                <div class="col-3 p-0">
+                    <button id="add" class="btn btn-primary btn-block" onclick="addE()">Add</button>
+                </div>
+            </div>
+            <div class="commentbox">
+                <section>
+                    <div class="col-12 d-flex mt-1">
+                        <div class="col-8" id="comment">
+                            <div><p>Sample Comment</p></div>
+                        </div>
+                        <div class="col-2 p-0" id="edit"> 
+                            <button class="btn btn-primary btn-block" onclick="edit(this)">Edit</button>
+                        </div>
+                        <div class="col-2 p-0" id="delbtn"> 
+                            <button class="btn btn-danger btn-block" onclick="delete(this)">Delete</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <br>
+            <div class="col-12 p-0">
+                <button class="btn btn-primary btn-block " onclick="clear(this)">Clear All</button>
+            </div>
+        </div>
+          
+</section>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector using clone</title>
+    <script src="pract5.js"></script>
+</head>
+<body>
+    
+    <div style="font-size: 10vh; margin: 5px;">Likes, Comments and Delete Comments!!!...</div>
+
+    <div>
+        <input id="input" type="text" placeholder="Enter comments here...." style ="height: 3vh; width:20vw; margin: 5px">
+    </div>
+
+    <div style="padding: 10px 0 10px 8px;">
+        <button onclick="like()" id="btnlike">Like</button> &nbsp;&nbsp;
+        <button onclick="comment()">Comment</button>
+    </div>
+
+    <div id="createComment">
+        <div class="alwaysCreated" style="display: flex; justify-content: space-between; margin: 2px; visibility: hidden;">
+    
+            <div> <!--Sample Reference Comments--> </div>
+            <button onclick="del(this)">Delete</button>
+    
+        </div>
+    </div>
+
+</body>
+</html>
